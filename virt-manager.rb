@@ -3,8 +3,8 @@ class VirtManager < Formula
 
   desc "App for managing virtual machines"
   homepage "https://virt-manager.org/"
-  url "https://virt-manager.org/download/sources/virt-manager/virt-manager-3.0.0.tar.gz"
-  sha256 "8afb58b1ee979e6ba9bdda3f98bd553b35981519660a649b38309d7924662f3d"
+  url "https://virt-manager.org/download/sources/virt-manager/virt-manager-2.2.1.tar.gz"
+  sha256 "cfd88d66e834513e067b4d3501217e21352fadb673103bacb9e646da9f029a1b"
   revision 3
 
   depends_on "intltool" => :build
