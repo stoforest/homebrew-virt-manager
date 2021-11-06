@@ -3,8 +3,8 @@ class VirtManager < Formula
 
   desc "App for managing virtual machines"
   homepage "https://virt-manager.org/"
-  url "https://virt-manager.org/download/sources/virt-manager/virt-manager-2.2.1.tar.gz"
-  sha256 "cfd88d66e834513e067b4d3501217e21352fadb673103bacb9e646da9f029a1b"
+  url "https://virt-manager.org/download/sources/virt-manager/virt-manager-3.2.0.tar.gz"
+  sha256 "2b6fe3d90d89e1130227e4b05c51e6642d89c839d3ea063e0e29475fd9bf7b86"
   revision 3
 
   depends_on "intltool" => :build
@@ -27,33 +27,33 @@ class VirtManager < Formula
   depends_on "vte3"
 
   resource "libvirt-python" do
-    url "https://libvirt.org/sources/python/libvirt-python-7.8.0.tar.gz"
-    sha256 "9d07416d66805bf1a17f34491b3ced2ac6c42b6a012ddf9177e0e3ae1b103fd5"
+    url "https://libvirt.org/sources/python/libvirt-python-7.9.0.tar.gz"
+    sha256 "8535cffa5fbf05185648f9f57a2f71899c3bc12c897d320351c53725a48e5359"
   end
 
   resource "idna" do
-    url "https://pypi.io/packages/source/i/idna/idna-2.8.tar.gz"
-    sha256 "c357b3f628cf53ae2c4c05627ecc484553142ca23264e593d327bcde5e9c3407"
+    url "https://pypi.io/packages/source/i/idna/idna-3.2.tar.gz"
+    sha256 "9d643ff0a55b762d5cdb124b8eaa99c66322e2157b69160bc32796e824360e6d"
   end
 
   resource "certifi" do
-    url "https://pypi.io/packages/source/c/certifi/certifi-2019.11.28.tar.gz"
-    sha256 "25b64c7da4cd7479594d035c08c2d809eb4aab3a26e5a990ea98cc450c320f1f"
+    url "https://pypi.io/packages/source/c/certifi/certifi-2021.10.8.tar.gz"
+    sha256 "78884e7c1d4b00ce3cea67b44566851c4343c120abd683433ce934a68ea58872"
   end
 
   resource "chardet" do
-    url "https://pypi.io/packages/source/c/chardet/chardet-3.0.4.tar.gz"
-    sha256 "84ab92ed1c4d4f16916e05906b6b75a6c0fb5db821cc65e70cbd64a3e2a5eaae"
+    url "https://pypi.io/packages/source/c/chardet/chardet-4.0.0.tar.gz"
+    sha256 "0d6f53a15db4120f2b08c94f11e7d93d2c911ee118b6b30a04ec3ee8310179fa"
   end
 
   resource "urllib3" do
-    url "https://pypi.io/packages/source/u/urllib3/urllib3-1.25.7.tar.gz"
-    sha256 "f3c5fd51747d450d4dcf6f923c81f78f811aab8205fda64b0aba34a4e48b0745"
+    url "https://pypi.io/packages/source/u/urllib3/urllib3-1.26.7.tar.gz"
+    sha256 "4987c65554f7a2dbf30c18fd48778ef124af6fab771a377103da0585e2336ece"
   end
 
   resource "requests" do
-    url "https://pypi.io/packages/source/r/requests/requests-2.22.0.tar.gz"
-    sha256 "11e007a8a2aa0323f5a921e9e6a2d7e4e67d9877e85773fba9ba6419025cbeb4"
+    url "https://pypi.io/packages/source/r/requests/requests-2.26.0.tar.gz"
+    sha256 "b8aa58f8cf793ffd8782d3d8cb19e66ef36f7aba4353eec859e74678b01b07a7"
   end
 
   # virt-manager doesn't prompt for password on macOS unless --no-fork flag is provided
